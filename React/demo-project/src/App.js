@@ -1,5 +1,6 @@
 import FirstComponent from './components/001-components-intro/FirstComponents';
 import ArticlePage from './components/002-componentHierarchy/ArticlePage';
+import Manager from './components/003-props/Manager';
 import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
@@ -14,7 +15,8 @@ function App() {
     <div className="App">
       {/* Our app is rendering whatever FirstComponent renders */}
       {/* <FirstComponent/>  */}
-      <ArticlePage/>
+      {/* <ArticlePage/> */}
+      <Manager/>
     </div>
   );
 }
