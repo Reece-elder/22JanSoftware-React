@@ -1,14 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import FirstComponent from './components/001-components-intro/FirstComponents';
+import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
 
 function App() {
+  // Everything between the return() is considred html 
+  // If you want to add JS to your html it must be contained within {}
+
   return (
     <div className="App">
-      <h1> This is a new header </h1>
-      <h3> This is a smaller subtitle </h3>
-      <p> My new text into this </p>
+      {/* Our app is rendering whatever FirstComponent renders */}
+      <FirstComponent/> 
     </div>
   );
 }
