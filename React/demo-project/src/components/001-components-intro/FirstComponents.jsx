@@ -8,6 +8,8 @@ const FirstComponent = () => {
 
     const name = "new name";
     const favPizza = "Hawiaan"; 
+    const favColour = "Purple";
+    const favNumber = 36
 
     // Within a Component the only thing that this renders is what it returns
     // A component can only ever return one HTML element
@@ -20,6 +22,14 @@ const FirstComponent = () => {
             {/* By using {} we are seamlessly adding our JS to our HTML return */}
             <h2> My name is {name} </h2>
             <h3> My fav pizza is {favPizza} </h3>
+            <h2 > My fav colour is: {favColour} </h2>
+            <h2> Favour number is {favNumber} </h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Phelsuma_l._laticauda.jpg" alt="description" width="300px"/> 
+            <ol> 
+                <li> Kiwi </li>
+                <li> Banana </li>
+                <li> Mango </li>
+            </ol>
         </>
     )
 
