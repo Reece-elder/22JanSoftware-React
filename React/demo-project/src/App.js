@@ -1,5 +1,6 @@
 import FirstComponent from './components/001-components-intro/FirstComponents';
 import ArticlePage from './components/002-componentHierarchy/ArticlePage';
+import ContactCardManager from './components/003-props/ContactCardExercise/ContactCardManager';
 import Manager from './components/003-props/Manager';
 import './css/App.css';
 
@@ -16,7 +17,8 @@ function App() {
       {/* Our app is rendering whatever FirstComponent renders */}
       {/* <FirstComponent/>  */}
       {/* <ArticlePage/> */}
-      <Manager/>
+      {/* <Manager/> */}
+      <ContactCardManager/>
     </div>
   );
 }
