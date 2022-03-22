@@ -11,13 +11,14 @@ const StateManager = () => {
     // takes the current value of total, increases it by 1
     const updateTotal = () => {
         setTotal(total + 1);
-    }
+    };
 
     return ( 
         // Our button takes in a custom function to increase the value
         // Our counter just takes in the state we created 
         <>
-            <StateButton updateTotal={updateTotal}/>
+        {/* Rather than passing in our updateTotal function, I can pass in my setter */}
+            <StateButton updateTotal={setTotal} total={total}/>
             <Counter total={total}/>
         </>
 
