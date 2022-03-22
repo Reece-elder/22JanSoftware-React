@@ -4,6 +4,8 @@ import ContactCardManager from './components/003-props/ContactCardExercise/Conta
 import Manager from './components/003-props/Manager';
 import StateManager from './components/004-state/StateManager';
 import HelloName from './components/005-forms/HelloName';
+import Login from './components/005-forms/Login';
+import FormManager from './components/006-UsingStateForms/FormManager';
 import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
@@ -22,7 +24,9 @@ function App() {
       {/* <Manager/> */}
       {/* <ContactCardManager/> */}
       {/* <StateManager/> */}
-      <HelloName/>
+      {/* <HelloName/> */}
+      {/* <FormManager/> */}
+      <Login/>
     </div>
   );
 }
