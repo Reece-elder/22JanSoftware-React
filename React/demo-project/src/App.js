@@ -2,6 +2,7 @@ import FirstComponent from './components/001-components-intro/FirstComponents';
 import ArticlePage from './components/002-componentHierarchy/ArticlePage';
 import ContactCardManager from './components/003-props/ContactCardExercise/ContactCardManager';
 import Manager from './components/003-props/Manager';
+import StateManager from './components/004-state/StateManager';
 import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
@@ -18,7 +19,8 @@ function App() {
       {/* <FirstComponent/>  */}
       {/* <ArticlePage/> */}
       {/* <Manager/> */}
-      <ContactCardManager/>
+      {/* <ContactCardManager/> */}
+      <StateManager/>
     </div>
   );
 }
