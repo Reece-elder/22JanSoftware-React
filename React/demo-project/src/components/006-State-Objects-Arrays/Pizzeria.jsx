@@ -17,6 +17,10 @@ const Pizzeria = () => {
         setPizzaData(pizzaObj);
     };
 
+    const updateObject = (event) => {
+
+    }
+
     return ( 
         <>
             <form>
