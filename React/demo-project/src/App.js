@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import FirstComponent from './components/001-components-intro/FirstComponents';
 import ArticlePage from './components/002-componentHierarchy/ArticlePage';
 import ContactCardManager from './components/003-props/ContactCardExercise/ContactCardManager';
@@ -11,6 +13,7 @@ import Pizzeria2 from './components/006-State-Objects-Arrays/Pizzeria2';
 import ShopManager from './components/007-State-Array/ShopManager';
 import ToDoManager from './components/007-State-Array/ToDoManager';
 import Pokedex from './components/008-ExternalData/Pokedex.jsx';
+import BootStrapDemo from './components/009-ExternalLibraries/BootStrapDemo';
 import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
@@ -36,7 +39,8 @@ function App() {
       {/* <Pizzeria2/> */}
       {/* <ToDoManager/> */}
       {/* <ShopManager/> */}
-      <Pokedex/>
+      {/* <Pokedex/> */}
+      <BootStrapDemo/>
     </div>
   );
 }

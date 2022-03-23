@@ -1,0 +1,20 @@
+h2, h3, h4 {
+    border: 2px solid red
+}
+
+/* All h2, h3, and h4 should have a red border */
+
+/* Element Selectors */
+/* Class Selectors */
+.blue-text {
+    color: blue
+}
+.green-border {
+    border: 2px solid green;
+}
+
+.purple-border {
+    border: 2px solid purple
+}
+
+/* ID selectors */
