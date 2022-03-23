@@ -8,6 +8,7 @@ import Login from './components/005-forms/Login';
 import Garage from './components/006-State-Objects-Arrays/Garage';
 import Pizzeria from './components/006-State-Objects-Arrays/Pizzeria';
 import Pizzeria2 from './components/006-State-Objects-Arrays/Pizzeria2';
+import ShopManager from './components/007-State-Array/ShopManager';
 import ToDoManager from './components/007-State-Array/ToDoManager';
 import './css/App.css';
 
@@ -32,7 +33,8 @@ function App() {
       {/* <Garage/> */}
       {/* <Pizzeria/> */}
       {/* <Pizzeria2/> */}
-      <ToDoManager/>
+      {/* <ToDoManager/> */}
+      <ShopManager/>
     </div>
   );
 }
