@@ -10,6 +10,7 @@ import Pizzeria from './components/006-State-Objects-Arrays/Pizzeria';
 import Pizzeria2 from './components/006-State-Objects-Arrays/Pizzeria2';
 import ShopManager from './components/007-State-Array/ShopManager';
 import ToDoManager from './components/007-State-Array/ToDoManager';
+import Pokedex from './components/008-ExternalData/Pokedex.jsx';
 import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
@@ -34,7 +35,8 @@ function App() {
       {/* <Pizzeria/> */}
       {/* <Pizzeria2/> */}
       {/* <ToDoManager/> */}
-      <ShopManager/>
+      {/* <ShopManager/> */}
+      <Pokedex/>
     </div>
   );
 }
