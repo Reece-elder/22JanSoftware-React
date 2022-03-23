@@ -7,6 +7,7 @@ import HelloName from './components/005-forms/HelloName';
 import Login from './components/005-forms/Login';
 import Garage from './components/006-State-Objects-Arrays/Garage';
 import Pizzeria from './components/006-State-Objects-Arrays/Pizzeria';
+import Pizzeria2 from './components/006-State-Objects-Arrays/Pizzeria2';
 import './css/App.css';
 
 // Within React, the data that is rendered is what each component (app.js) returns
@@ -28,7 +29,8 @@ function App() {
       {/* <HelloName/> */}
       {/* <Login/> */}
       {/* <Garage/> */}
-      <Pizzeria/>
+      {/* <Pizzeria/> */}
+      <Pizzeria2/>
     </div>
   );
 }
