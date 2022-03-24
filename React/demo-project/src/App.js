@@ -24,6 +24,7 @@ import NavBar from './components/010-ReactRouting/NavBar';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Footer from './components/010-ReactRouting/Footer';
 import Item from './components/010-ReactRouting/Item';
+import Clock from './components/011-Hooks/Clock';
 
 
 
@@ -56,18 +57,19 @@ function App() {
       {/* <ShopManager/> */}
       {/* <Pokedex/> */}
       {/* <BootStrapDemo/> */}
-      <Router>
-        <NavBar/>
-        <Routes> 
+      {/* <Router> */}
+        {/* <NavBar/> */}
+        {/* <Routes>  */}
           {/* Route takes in two things, path = "/home", element = the component to render */}
-          <Route path = "/" element={<Home/>} />
-          <Route path = "/about" element={<About/>}/>
-          <Route path = "/shop" element={<Shop/>}/>
+          {/* <Route path = "/" element={<Home/>} /> */}
+          {/* <Route path = "/about" element={<About/>}/> */}
+          {/* <Route path = "/shop" element={<Shop/>}/> */}
           {/* : denotes the next thing (itemId) is the name of the url parameter to enter */}
-          <Route path = "/item/:itemId" element={<Item/>}/>
-        </Routes>
-        <Footer/>
-      </Router>
+          {/* <Route path = "/item/:itemId" element={<Item/>}/> */}
+        {/* </Routes> */}
+        {/* <Footer/> */}
+      {/* </Router> */}
+      <Clock/>
     </div>
   );
 }
