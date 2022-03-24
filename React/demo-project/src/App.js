@@ -25,6 +25,8 @@ import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Footer from './components/010-ReactRouting/Footer';
 import Item from './components/010-ReactRouting/Item';
 import Clock from './components/011-Hooks/Clock';
+import ChangeTitle from './components/011-Hooks/ChangeTitle';
+import Bar from './components/012-DataRequests/Bar';
 
 
 
@@ -70,6 +72,8 @@ function App() {
         {/* <Footer/> */}
       {/* </Router> */}
       <Clock/>
+      <ChangeTitle/>
+      <Bar/>
     </div>
   );
 }

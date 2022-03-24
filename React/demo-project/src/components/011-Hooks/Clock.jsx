@@ -19,9 +19,7 @@ const Clock = () => {
     // runs everytime the page changes state or renders something new
     // useEffect(tick); // A bad way of running.. hopefully
     useEffect(() => {
-        console.log("use effect started");
         setTimeout(tick, 1000);      // Waits for x milliseconds and then does the passed in function
-        console.log("use effect finished");
     },[time])       // Every time time state is changed run this method  
 
     // If your use effect changes state 'A', if you put [A] in your bottom of useEffect = infiniteLoop  
