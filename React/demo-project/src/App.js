@@ -23,6 +23,7 @@ import NavBar from './components/010-ReactRouting/NavBar';
 // Calls the component Router rather than BrowserRouter
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Footer from './components/010-ReactRouting/Footer';
+import Item from './components/010-ReactRouting/Item';
 
 
 
@@ -62,6 +63,8 @@ function App() {
           <Route path = "/" element={<Home/>} />
           <Route path = "/about" element={<About/>}/>
           <Route path = "/shop" element={<Shop/>}/>
+          {/* : denotes the next thing (itemId) is the name of the url parameter to enter */}
+          <Route path = "/item/:itemId" element={<Item/>}/>
         </Routes>
         <Footer/>
       </Router>
