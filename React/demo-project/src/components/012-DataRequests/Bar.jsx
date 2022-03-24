@@ -2,6 +2,7 @@
 
 import {useEffect, useState} from 'react';
 import axios from 'axios';
+import Beer from './Beer';
 
 const Bar = () => {
 
@@ -24,7 +25,13 @@ const Bar = () => {
     },[]) 
 
     return ( 
-        <h2> Bar! </h2>
+        <div>
+            {
+                data.map((beer, key) => {
+                    return <Beer data={beer} key={key}/>
+                })
+            }
+        </div>
      );
 }
  
