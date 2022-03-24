@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './css/App.css';
 
 import FirstComponent from './components/001-components-intro/FirstComponents';
 import ArticlePage from './components/002-componentHierarchy/ArticlePage';
@@ -14,7 +15,20 @@ import ShopManager from './components/007-State-Array/ShopManager';
 import ToDoManager from './components/007-State-Array/ToDoManager';
 import Pokedex from './components/008-ExternalData/Pokedex.jsx';
 import BootStrapDemo from './components/009-ExternalLibraries/BootStrapDemo';
-import './css/App.css';
+import Home from './components/010-ReactRouting/Home';
+import About from './components/010-ReactRouting/About';
+import Shop from './components/010-ReactRouting/Shop';
+import NavBar from './components/010-ReactRouting/NavBar';
+
+// Calls the component Router rather than BrowserRouter
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Footer from './components/010-ReactRouting/Footer';
+
+
+
+
+
+
 
 // Within React, the data that is rendered is what each component (app.js) returns
 
@@ -40,7 +54,17 @@ function App() {
       {/* <ToDoManager/> */}
       {/* <ShopManager/> */}
       {/* <Pokedex/> */}
-      <BootStrapDemo/>
+      {/* <BootStrapDemo/> */}
+      <Router>
+        <NavBar/>
+        <Routes> 
+          {/* Route takes in two things, path = "/home", element = the component to render */}
+          <Route path = "/" element={<Home/>} />
+          <Route path = "/about" element={<About/>}/>
+          <Route path = "/shop" element={<Shop/>}/>
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
   );
 }
